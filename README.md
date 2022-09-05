@@ -1,2 +1,9 @@
 # Hearst-Patterns
-A two-part project that makes use of regexs for the detection and extraction of hypernyms and hyponyms from a file in order to process them and create a new file with the relevant information.  
+A two-part project that makes use of regexs for the detection and extraction of hypernyms and hyponyms from a file in order to process them and create a new file with the relevant information.
+
+A preview - Hypernymy (also called IS-A relation) is a semantic relation between two noun phrases, hypernym and hyponym, such that the hyponym is a subtype of the hypernym. For example, cat and dog are hyponym of animal because they are types of animals. Hypernym relations are hierarchical, so a word can have multiple hypernyms. For example, dog is a hyponym of animal, canine and mammal.
+
+Project Description - In this project there are two part: Creating a Hypernym-Relations database and discovering a lemma(hypernym) in a Hypernym-Relations database.
+
+- In the first part, the program reads all the files in the given directory path, finds and aggregates hypernym relations that match the Hearst patterns using regular expressions, and save them in a txt file at the given output path.
+- In the second part, the program searches all the possible hypernyms of the input lemma and prints them and their number of appearances to the console.
